@@ -1,27 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Mes Projets{% endblock %}
+{% block title %}Accueil{% endblock %}
 
 {% block body %}
-<style>
-    .projects-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .project { margin-bottom: 1.5em; }
-    .project a { text-decoration: none; color: #007BFF; }
-</style>
+<h1>Bienvenue sur mon portfolio !</h1>
+<p>Je m'appelle Yacine Bensmail, étudiant en BUT Reseaux et Telecommunication 1 et passionné par l'informatique, le développement web et la cybersécurité.</p>
+<img src="{{ asset('images/iut.png') }}" alt="IUT de Roanne" style="max-width:100%; height:auto;">
 
-<div class="projects-wrapper">
-    <h1>Mes Projets</h1>
-
-    <div class="project">
-        <h2>Portfolio Symfony</h2>
-        <p>Mon portfolio personnel créé avec Symfony et Twig.</p>
-        <a href="https://github.com/ton-nom-utilisateur/portfolio" target="_blank">Voir sur GitHub</a>
-    </div>
-
-    <div class="project">
-        <h2>Projet Exemple 2</h2>
-        <p>Description de ton deuxième projet.</p>
-        <a href="#" target="_blank">Voir le projet</a>
-    </div>
-</div>
 {% endblock %}

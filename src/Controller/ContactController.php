@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ProjectController extends AbstractController
+class ContactController extends AbstractController
 {
-    #[Route('/projects', name: 'app_projects')]
+    #[Route('/contact', name: 'app_contact')]
     public function index(): Response
     {
-        return $this->render('projects/index.html.twig', [
-            'page_title' => 'Mes Projets',
+        return $this->render('contact/index.html.twig', [
+            'page_title' => 'Contact & Réseaux',
         ]);
     }
 }
