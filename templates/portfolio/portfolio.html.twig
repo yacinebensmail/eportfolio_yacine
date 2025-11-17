@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon E-Portfolio{% endblock %}
+
+{% block body %}
+    <h1>Mon E-Portfolio de Compétences</h1>
+    <p>
+        Voici le détail de mes compétences acquises lors de ma première année de BUT, 
+        justifiées par mes travaux et analyses réflexives[cite: 56, 78].
+    </p>
+
+    <div class="accordion" id="accordionPortfolio">
+
+      {# Exemple pour UNE compétence, basé sur ton image [cite: 33] #}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <strong>Compétence :</strong> Administrer les réseaux et l'Internet (RT1)
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPortfolio">
+          <div class="accordion-body">
+            <p><strong>Apprentissage Critique :</strong> Configurer les fonctions de base du réseau local (Ethernet, IPv4, ...)</p>
+            <p><strong>Auto-évaluation :</strong> 3/4</p>
+            <p><strong>Preuves (Projets) :</strong></p>
+            <ul>
+                <li>SAE 1.01 : [Nom de la SAE]</li>
+                <li>Ressource R1.01 : [Nom du TP]</li>
+            </ul>
+            <p><strong>Analyse Réflexive[cite: 87]:</strong></p>
+            <blockquote>
+              J'ai appris à configurer un switch et un routeur... [Explique ce que tu as fait, ce que tu as réussi, ce que tu as trouvé difficile et comment tu as surmonté le problème].
+            </blockquote>
+            <a href="[LIEN VERS TA PREUVE GOOGLE DOCS]" class="btn btn-sm btn-outline-primary" target="_blank">Voir la preuve</a>
+          </div>
+        </div>
+      </div>
+
+      {# Ajoute d'autres "accordion-item" pour les autres compétences #}
+      
+    </div>
+{% endblock %}

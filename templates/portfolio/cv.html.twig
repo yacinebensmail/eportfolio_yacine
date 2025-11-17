@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon CV{% endblock %}
+
+{% block body %}
+    {# En-tête avec le poste de vos rêves [cite: 52] #}
+    <header class="text-center mb-5">
+        <h1>[TON NOM PRÉNOM]</h1>
+        <h2>Objectif : Devenir Ingénieur en Cybersécurité</h2>
+    </header>
+
+    <div class="container">
+        {# Section Formations  #}
+        <section class="mb-4">
+            <h3>Formations</h3>
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5 class="card-title">2025 - 2028 (en cours) : BUT Réseaux & Télécommunications</h5>
+                    <p class="card-text">IUT de Roanne (Université Jean Monnet) [cite: 26]</p>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5 class="card-title">2025 : Baccalauréat [TON OPTION]</h5>
+                    <p class="card-text">Lycée [TON LYCÉE], [VILLE]</p>
+                </div>
+            </div>
+        </section>
+
+        {# Section Expériences Professionnelles  #}
+        <section class="mb-4">
+            <h3>Expériences Professionnelles</h3>
+            <p><em>(Exemples à adapter)</em></p>
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5 class="card-title">Été 2025 : Job d'été - [POSTE]</h5>
+                    <p class="card-text">[ENTREPRISE] - [VILLE] : Missions de [décrire brièvement].</p>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5 class="card-title">2024 : Stage d'observation (Classe de 3ème/Seconde)</h5>
+                    <p class="card-text">[ENTREPRISE] - [VILLE] : Découverte du service informatique.</p>
+                </div>
+            </div>
+        </section>
+
+        {# Section Compétences  #}
+        <section class="mb-4">
+            <h3>Compétences</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Bases en HTML/CSS (acquis en R1.09) [cite: 40]</li>
+                <li class="list-group-item">Bases en PHP (Symfony) (acquis en SAE1.04) [cite: 86]</li>
+                <li class="list-group-item">Analyse et conception de réseaux (acquis en R1.01) [cite: 33]</li>
+                <li class="list-group-item">Anglais (B1)</li>
+            </ul>
+        </section>
+    </div>
+{% endblock %}

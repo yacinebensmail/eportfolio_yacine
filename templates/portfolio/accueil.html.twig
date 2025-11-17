@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{# Définit le titre pour cette page spécifique #}
+{% block title %}Home - [TON NOM]{% endblock %}
+
+{% block body %}
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Welcome! I'm [TON NOM PRÉNOM]</h1>
+            <p class="col-md-8 fs-4">
+                I am a first-year student  in Networks & Telecommunications (BUT RT) at the IUT of Roanne [cite: 26] for the 2025-2026 year[cite: 3].
+            </p>
+            <p>My professional goal is to become a Cybersecurity Engineer[cite: 28].</p>
+        </div>
+    </div>
+
+    {# Le "Container" Bootswatch demandé  #}
+    <div class="card text-white bg-secondary mb-3">
+      <div class="card-header">
+        <h4 class="card-title">Learn More About Me</h4>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+            This section leads to a more personal page where you can discover my hobbies, my passions, and my projects.
+        </p>
+        <a href="{{ path('app_about') }}" class="btn btn-primary">Discover</a>
+      </div>
+    </div>
+{% endblock %}
